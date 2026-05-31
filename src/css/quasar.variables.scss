@@ -12,14 +12,14 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary: #1976d2;
-$secondary: #26a69a;
-$accent: #9c27b0;
+$primary   : #1E3A8A; // Biru gelap - navbar, header, main button
+$secondary : #14B8A6; // Teal - highlight, badge, secondary button
+$accent    : #F97316; // Oren - CTA button macam Buy / Checkout / Add Product
 
-$dark: #1d1d1d;
-$dark-page: #121212;
+$dark      : #111827; // Dark mode card/background
+$dark-page : #0F172A; // Dark page background
 
-$positive: #21ba45;
-$negative: #c10015;
-$info: #31ccec;
-$warning: #f2c037;
+$positive  : #22C55E; // Success
+$negative  : #EF4444; // Error/Delete
+$info      : #38BDF8; // Info
+$warning   : #F59E0B; // Warning

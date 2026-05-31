@@ -1,1 +1,40 @@
 // app global css
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Global button styling
+button,
+.q-btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Card styling
+.q-card {
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Input styling
+.q-field__control {
+  border-radius: 8px;
+}
+
+// General spacing
+.container {
+  padding: 20px;
+}

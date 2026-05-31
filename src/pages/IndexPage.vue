@@ -1,12 +1,9 @@
 <template>
   <div class="q-pa-none">
-    <router-link to="/page1" class="thrift-link">
-      <q-parallax :height="600" :speed="0.7">
-        <template v-slot:media>
-          <img src="/icons/services.jpg" />
-        </template>
-
-        <div class="thrift-cta">
+    <router-link to="/page1" class="thrift-link hero-link">
+      <div class="hero-card">
+        <q-img src="/icons/services.jpg" class="hero-img" />
+        <div class="thrift-cta hero-cta">
           <h1 class="text-white">Services</h1>
           <q-btn
             unelevated
@@ -16,7 +13,7 @@
             text-color="black"
           />
         </div>
-      </q-parallax>
+      </div>
     </router-link>
   </div>
   <div class="q-pa-none">
@@ -40,13 +37,10 @@
     </router-link>
   </div>
   <div class="q-pa-none">
-    <router-link to="/page3" class="thrift-link">
-      <q-parallax :height="600" :speed="0.7">
-        <template v-slot:media>
-          <img src="/icons/thrift.jpg" />
-        </template>
-
-        <div class="thrift-cta">
+    <router-link to="/page3" class="thrift-link hero-link">
+      <div class="hero-card">
+        <q-img src="/icons/thrift.jpg" class="hero-img" />
+        <div class="thrift-cta hero-cta">
           <h1 class="text-white">Thrift Shop</h1>
           <q-btn
             unelevated
@@ -56,7 +50,7 @@
             text-color="black"
           />
         </div>
-      </q-parallax>
+      </div>
     </router-link>
   </div>
 </template>
@@ -79,6 +73,34 @@ export default {
 .thrift-link {
   display: block;
   text-decoration: none;
+}
+
+.hero-link {
+  display: block;
+}
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero-cta {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.28);
 }
 
 .thrift-cta {

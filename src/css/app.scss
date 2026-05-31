@@ -34,6 +34,60 @@ button,
   border-radius: 8px;
 }
 
+.main-header {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  background: linear-gradient(180deg, #1976d2 0%, #155a9a 100%);
+}
+
+.main-header .q-toolbar-title {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.header-tabs {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 6px;
+}
+
+.header-tabs .q-tab,
+.header-tabs .q-route-tab {
+  border-radius: 999px !important;
+  margin: 0 6px !important;
+  padding: 10px 22px !important;
+  min-width: unset !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: white !important;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.header-tabs .q-tab:hover,
+.header-tabs .q-route-tab:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  transform: translateY(-1px);
+}
+
+.header-tabs .q-tab--active,
+.header-tabs .q-route-tab--active,
+.header-tabs .q-tab.q-tab--active,
+.header-tabs .q-route-tab.q-tab--active {
+  background: rgba(255, 255, 255, 0.28) !important;
+  color: white !important;
+}
+
+.header-tabs .q-tab__label,
+.header-tabs .q-route-tab .q-tab__label {
+  padding: 0 4px;
+}
+
+.header-tabs .q-tabs__indicator,
+.header-tabs .q-tab__indicator {
+  display: none !important;
+}
+
 // General spacing
 .container {
   padding: 20px;

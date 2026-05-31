@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fff" class="bg-red-2">
-    <q-header elevated class="bg-primary text-white" height-hint="98">
+    <q-header elevated class="bg-primary text-white main-header" height-hint="98">
       <q-toolbar>
         <q-toolbar-title> UPNM Market Place </q-toolbar-title>
 
@@ -13,7 +13,7 @@
 
       <q-tabs
         align="center"
-        class="bg-primary text-white"
+        class="bg-primary text-white header-tabs"
         active-color="white"
         indicator-color="white"
       >
